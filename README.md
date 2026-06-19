@@ -9,7 +9,7 @@ View doctor availability & specialization
 🧑‍🤝‍🧑 Patient Management
 Register new patients
 Update patient records
-Maintain patient history
+Maintain patient history 
 📅 Appointment Scheduling
 Book appointments with doctors
 Manage schedules
