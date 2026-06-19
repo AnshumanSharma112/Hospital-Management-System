@@ -115,14 +115,14 @@ public class MainController {
 		   
 		}
 		
-		@RequestMapping("/confirm")
+		@RequestMapping("/confirm") // for confirmation along the application.
 		public String confirm(@ModelAttribute("appointment") appointment appointment, BindingResult result, ModelMap model,
 				RedirectAttributes redirectAttributes
 				) {
 			System.out.println(appointment);
 			//Optional<com.company.varnaa.appointment> x = service.get(appointment.getAppointment_id());
 		 String confirmation = "confirmed";
-		 Integer id = appointment.getAppointment_id();
+		 Integer id = appointment.getAppointment_id(); // appointments
 		 service.setConfirmation(confirmation, id);
 		System.out.println(id);
 		  String message = "Appointment was successfully confirmed!";
@@ -135,7 +135,7 @@ public class MainController {
 		@GetMapping("/confirmm")
 		public String showConfirmm(Model model) {
 			appointment confirmation = new appointment();
-			model.addAttribute("confirmation",confirmation);
+			model.addAttribute("confirmation",confirmation); // confirmation
 			return "confirm";
 		}
 		
